@@ -3,10 +3,10 @@ version: 2.1
 jobs:
   run:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/python:3.12
     steps:
       - checkout
-      - run: echo "CircleCI run job executed"
+      - run: echo "Test of CircleCI run job executed"
 
 workflows:
   build_and_test:
