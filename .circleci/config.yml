@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  run:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run: echo "CircleCI run job executed"
+
+workflows:
+  build_and_test:
+    jobs:
+      - run
